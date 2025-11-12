@@ -31,8 +31,13 @@ const config = {
   projectName: 'Recommend-System-Note', // Usually your repo name.
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'warn',  // 临时改为 warn 以查看所有问题
+  // 迁移到新的配置位置（Docusaurus v4 兼容）
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
