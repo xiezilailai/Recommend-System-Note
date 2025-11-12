@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: xiezilailai/Recommend-System-Note
-          token: ${{ secrets.GITHUB_TOKEN }}  # 使用自动生成的 GITHUB_TOKEN（如果使用 PAT_TOKEN，请替换为 ${{ secrets.PAT_TOKEN }}）
+          token: ${{ secrets.PAT_TOKEN  }}  # 使用自动生成的 GITHUB_TOKEN（如果使用 PAT_TOKEN，请替换为 ${{ secrets.PAT_TOKEN }}）
           ssh-strict: true
           ssh-user: git
           persist-credentials: true
