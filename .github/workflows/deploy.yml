@@ -15,19 +15,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          repository: xiezilailai/Recommend-System-Note
-          token: ${{ secrets.GITHUB_TOKEN }}  # 使用自动生成的 GITHUB_TOKEN
-          ssh-strict: true
-          ssh-user: git
-          persist-credentials: true
+          # 对于同一仓库，不需要指定 repository 和 token
+          persist-credentials: false  # 避免与部署 Action 的凭证冲突
           clean: true
-          sparse-checkout-cone-mode: true
           fetch-depth: 1
           fetch-tags: false
-          show-progress: true
           lfs: false
           submodules: false
-          set-safe-directory: true
 
       - name: Setup Node
         uses: actions/setup-node@v4
