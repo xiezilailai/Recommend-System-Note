@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Welcome!👏
 
-我对mlsys很感兴趣，在这里我会分享我的学习笔记！😊
+这个网站会更新推荐系统相关的论文
 
 :::info
 **更新日志**
